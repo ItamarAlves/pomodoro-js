@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro</title>
+</head>
+
+<body>
+    <div class="column-container">
+        <div class="row-container">
+            <button type="button" class="btn" onclick="metodoPomodoro(25)">Pomodoro</button>
+            <button type="button" class="btn" onclick="paradaCurta(5)">Parada curta</button>
+            <button type="button" class="btn" onclick="paradaLonga(15)">Parada longa</button>
+        </div>
+        <h1>Metodologia Pomodoro</h1>
+        <p class="tempo" id="tempo">25:00</p>
+        <div class="row-container">
+            <button type="button" class="btn" id="btnIniciar" onclick="iniciar()">Iniciar</button>
+            <button type="button" class="btn" onclick="parar()">Parar</button>
+        </div>
+    </div>
+</body>
+<footer>
+    <audio id="audio" src="sons/notification.mp3"></audio>
+    <script type="text/javascript" src="scripts.js"></script>
+</footer>
+
+</html>
