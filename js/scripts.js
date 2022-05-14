@@ -48,7 +48,7 @@ function alteraTempo(){
     }
     segs = segs - 1;
 
-    if (mins == 0) {
+    if (mins == 0 && segs == 0) {
         metodoPomodoro(25);
         tocarSom();
     } else {
